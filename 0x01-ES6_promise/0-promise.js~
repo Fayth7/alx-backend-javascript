@@ -1,0 +1,10 @@
+export default function getResponseFromAPI() {
+  return new Promise((resolve, reject) => {
+    // Simulate an asynchronous API call
+    setTimeout(() => {
+      // Assuming a successful response
+      const responseData = { status: 200, data: 'Some data from the API' };
+	resolve(responseData);
+      }, 2000);
+  });
+}
